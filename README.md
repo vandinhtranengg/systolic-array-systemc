@@ -26,30 +26,7 @@ C = A × B
 ---
 
 # Architecture
-
-## 3×3 Systolic Array
-
-```
-                B Flow
-                  ↓
-        ┌───────┬───────┬───────┐
-        │ PE00  │ PE01  │ PE02  │
-        │ C00   │ C01   │ C02   │
-        └───┬───┴───┬───┴───┬───┘
-            │       │       │
-        ┌───▼───┬───▼───┬───▼───┐
-A Flow →│ PE10  │ PE11  │ PE12  │
-        │ C10   │ C11   │ C12   │
-        └───┬───┴───┬───┴───┬───┘
-            │       │       │
-        ┌───▼───┬───▼───┬───▼───┐
-        │ PE20  │ PE21  │ PE22  │
-        │ C20   │ C21   │ C22   │
-        └───────┴───────┴───────┘
-
-A moves →→→
-B moves ↓↓↓
-```
+![Alt text](images/PE&SA.png)
 
 Each PE computes:
 
@@ -67,26 +44,6 @@ Each PE contains:
 * adder
 * accumulator
 * forwarding registers
-
-Conceptual hardware block:
-
-```
-        a_in ──► Register ──► a_out
-                    │
-                    ▼
-                Multiplier
-                    │
-        b_in ──► Register ──► b_out
-                    │
-                    ▼
-                 Adder
-                    │
-               Accumulator
-                    │
-                   c_out
-```
-
----
 
 # Project Structure
 
@@ -227,6 +184,6 @@ This project is open-source and free to use for educational and research purpose
 # Author
 
 Van Dinh Tran
-PhD Student – Hardware Acceleration for Deep Learning
+Hardware Acceleration for Deep Learning
 
 
