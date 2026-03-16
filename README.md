@@ -41,8 +41,7 @@ sum += Aik × Bkj
 Each PE contains:
 
 * multiplier
-* adder
-* accumulator
+* accumulator(adder + register)
 * forwarding registers
 
 # Project Structure
