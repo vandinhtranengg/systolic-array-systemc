@@ -1,7 +1,7 @@
 # 3×3 Systolic Array Matrix Multiplication (SystemC)
 
 A simple **SystemC implementation of a 3×3 systolic array** used to perform **matrix multiplication**.
-This project demonstrates how **Processing Elements (PEs)** communicate in a systolic architecture and how data is scheduled using **skewed inputs and pipeline flushing**.
+This project demonstrates how **Processing Elements (PEs)** are built and communicate in a systolic architecture and how data is scheduled using **skewed inputs and pipeline flushing**.
 
 The design models the fundamental architecture used in **hardware accelerators for deep learning and matrix computation**.
 
