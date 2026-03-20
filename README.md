@@ -156,6 +156,7 @@ Systolic arrays are widely used in:
 * matrix multiplication accelerators
 * convolutional neural networks
 * deep learning hardware
+* sequence alignment
 * FPGA/ASIC AI accelerators
 
 Modern AI hardware uses much larger arrays (e.g., **128×128 or 256×256**).
